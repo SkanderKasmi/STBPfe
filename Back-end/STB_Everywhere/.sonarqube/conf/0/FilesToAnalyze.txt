@@ -1,0 +1,3 @@
+﻿C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\docker-compose.override.yml
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\docker-compose.yml
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\.dockerignore

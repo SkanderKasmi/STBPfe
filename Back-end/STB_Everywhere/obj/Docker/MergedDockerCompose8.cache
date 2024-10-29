@@ -1,0 +1,705 @@
+name: dockercompose13832590338016645422
+services:
+  accountcreation.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/AccountCreation/AccountCreation.API/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: AccountCreation.API
+      target: base
+    container_name: AccountCreation.API
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ""
+    image: accountcreationapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/AccountCreation.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8007"
+        protocol: tcp
+    restart: always
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere\Services\AccountCreation\AccountCreation.API
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\.nuget\packages\
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  documentupload.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/DocumentUpload/DocumentUpload.API/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: DocumentUpload.API
+      target: base
+    container_name: DocumentUpload.API
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ""
+    image: documentuploadapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/DocumentUpload.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8010"
+        protocol: tcp
+    restart: always
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere\Services\DocumentUpload\DocumentUpload.API
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\.nuget\packages\
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      xpack.watcher.enabled: "false"
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.2
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 9200
+        published: "9200"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: volume
+        source: elasticsearch-data
+        target: /usr/share/elasticsearch/data
+        volume: {}
+  emailservice.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/Email/EmailService.API/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: EmailService.API
+      target: base
+    container_name: EmailService.API
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ""
+    image: emailserviceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/EmailService.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8005"
+        protocol: tcp
+    restart: always
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere\Services\Email\EmailService.API
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\.nuget\packages\
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  kibana:
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_started
+        required: true
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    image: docker.elastic.co/kibana/kibana:8.12.2
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5601
+        published: "5601"
+        protocol: tcp
+    restart: always
+  rabbitmq:
+    container_name: RabbitMQ
+    image: rabbitmq:3-management-alpine
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
+      - mode: ingress
+        target: 15672
+        published: "15672"
+        protocol: tcp
+    restart: always
+  registration.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/Registration/Registration.API/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Registration.API
+      target: base
+    container_name: Registration.API
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ""
+    image: registrationapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/Registration.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8004"
+        protocol: tcp
+    restart: always
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.API
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\.nuget\packages\
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  signature.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/Signature/Signature.API/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Signature.API
+      target: base
+    container_name: Signature.API
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ""
+    image: signatureapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/Signature.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8008"
+        protocol: tcp
+    restart: always
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere\Services\Signature\Signature.API
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\.nuget\packages\
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  smsservice.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/SMS/SMSService.API/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: SMSService.API
+      target: base
+    container_name: SMSService.API
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ""
+    image: smsserviceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/SMSService.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8006"
+        protocol: tcp
+    restart: always
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\STBEverywhere\Back-end\STB_Everywhere
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\.nuget\packages\
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  sqlserverdb:
+    container_name: SqlServerDB
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: SwN12345678
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1434"
+        protocol: tcp
+    restart: always
+networks:
+  default:
+    name: dockercompose13832590338016645422_default
+volumes:
+  elasticsearch-data:
+    name: dockercompose13832590338016645422_elasticsearch-data

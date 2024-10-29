@@ -1,0 +1,37 @@
+Product projects
+---------------------------------------
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\docker-compose.dcproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\Registration.Domain.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Email\EmailService.API\EmailService.API.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Registration.Infrastructure.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.API\Registration.API.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\CQRS\CQRS.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\Common.Logging\Common.Logging.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Signature\Signature.API\Signature.API.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\HealthCheck\HealthCheck\HealthCheck.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Registration.Application.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\ValidationBehavior\ValidationBehavior.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\AccountCreation\AccountCreation.API\AccountCreation.API.csproj
+
+
+Test projects
+---------------------------------------
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Test\Registration.Test.csproj
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\SMSService.API.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

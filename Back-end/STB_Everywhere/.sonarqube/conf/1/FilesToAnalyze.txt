@@ -1,0 +1,2 @@
+﻿C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\Commun\EntityBase.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\Entities\Client.cs

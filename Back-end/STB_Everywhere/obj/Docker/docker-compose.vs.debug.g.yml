@@ -1,0 +1,211 @@
+version: '3.4'
+
+services:
+  accountcreation.api:
+    image: accountcreationapi:dev
+    container_name: "AccountCreation.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "AccountCreation.API"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\STBEverywhere\Back-end\STB_Everywhere\Services\AccountCreation\AccountCreation.API:/app
+      - C:\STBEverywhere\Back-end\STB_Everywhere:/src
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\jerby\.nuget\packages\:/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/AccountCreation.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  documentupload.api:
+    image: documentuploadapi:dev
+    container_name: "DocumentUpload.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "DocumentUpload.API"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\STBEverywhere\Back-end\STB_Everywhere\Services\DocumentUpload\DocumentUpload.API:/app
+      - C:\STBEverywhere\Back-end\STB_Everywhere:/src
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\jerby\.nuget\packages\:/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/DocumentUpload.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  emailservice.api:
+    image: emailserviceapi:dev
+    container_name: "EmailService.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "EmailService.API"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\STBEverywhere\Back-end\STB_Everywhere\Services\Email\EmailService.API:/app
+      - C:\STBEverywhere\Back-end\STB_Everywhere:/src
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\jerby\.nuget\packages\:/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/EmailService.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  registration.api:
+    image: registrationapi:dev
+    container_name: "Registration.API_1"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Registration.API"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.API:/app
+      - C:\STBEverywhere\Back-end\STB_Everywhere:/src
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\jerby\.nuget\packages\:/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/Registration.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  signature.api:
+    image: signatureapi:dev
+    container_name: "Signature.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Signature.API"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\STBEverywhere\Back-end\STB_Everywhere\Services\Signature\Signature.API:/app
+      - C:\STBEverywhere\Back-end\STB_Everywhere:/src
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\jerby\.nuget\packages\:/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/Signature.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  smsservice.api:
+    image: smsserviceapi:dev
+    container_name: "SMSService.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "SMSService.API"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API:/app
+      - C:\STBEverywhere\Back-end\STB_Everywhere:/src
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\jerby\.nuget\packages\:/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/SMSService.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

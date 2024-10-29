@@ -1,0 +1,2391 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.9.0.0",
+        "fileVersion": "4.9.2-3.24129.6 (9934fb9e)",
+        "semanticVersion": "4.9.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 45,
+                  "endLine": 31,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 45,
+                  "endLine": 31,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includeString' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 45,
+                  "endLine": 31,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, List<Expression<Func<T, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 45,
+                  "endLine": 45,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, List<Expression<Func<T, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 45,
+                  "endLine": 45,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includes' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, List<Expression<Func<T, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 45,
+                  "endLine": 45,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<Client>> RepositoryBase<Client>.GetAsync(Expression<Func<Client, bool>> predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<Client>> IAsyncRepository<Client>.GetAsync(Expression<Func<Client, bool>>? predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/ClientRepository.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 61,
+                  "endLine": 12,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<Client>> RepositoryBase<Client>.GetAsync(Expression<Func<Client, bool>> predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<Client>> IAsyncRepository<Client>.GetAsync(Expression<Func<Client, bool>>? predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/ClientRepository.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 61,
+                  "endLine": 12,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includeString' of 'Task<IReadOnlyList<Client>> RepositoryBase<Client>.GetAsync(Expression<Func<Client, bool>> predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<Client>> IAsyncRepository<Client>.GetAsync(Expression<Func<Client, bool>>? predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/ClientRepository.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 61,
+                  "endLine": 12,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<Client>> RepositoryBase<Client>.GetAsync(Expression<Func<Client, bool>> predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>> orderBy = null, List<Expression<Func<Client, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<Client>> IAsyncRepository<Client>.GetAsync(Expression<Func<Client, bool>>? predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>>? orderBy = null, List<Expression<Func<Client, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/ClientRepository.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 61,
+                  "endLine": 12,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<Client>> RepositoryBase<Client>.GetAsync(Expression<Func<Client, bool>> predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>> orderBy = null, List<Expression<Func<Client, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<Client>> IAsyncRepository<Client>.GetAsync(Expression<Func<Client, bool>>? predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>>? orderBy = null, List<Expression<Func<Client, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/ClientRepository.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 61,
+                  "endLine": 12,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includes' of 'Task<IReadOnlyList<Client>> RepositoryBase<Client>.GetAsync(Expression<Func<Client, bool>> predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>> orderBy = null, List<Expression<Func<Client, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<Client>> IAsyncRepository<Client>.GetAsync(Expression<Func<Client, bool>>? predicate = null, Func<IQueryable<Client>, IOrderedQueryable<Client>>? orderBy = null, List<Expression<Func<Client, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/ClientRepository.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 61,
+                  "endLine": 12,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 77,
+                  "endLine": 9,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 77,
+                  "endLine": 9,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includeString' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 77,
+                  "endLine": 9,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, List<Expression<Func<ClientDocument, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, List<Expression<Func<ClientDocument, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 77,
+                  "endLine": 9,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, List<Expression<Func<ClientDocument, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, List<Expression<Func<ClientDocument, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 77,
+                  "endLine": 9,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includes' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, List<Expression<Func<ClientDocument, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, List<Expression<Func<ClientDocument, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 77,
+                  "endLine": 9,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<AccountCreationEntity>> RepositoryBase<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>> predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<AccountCreationEntity>> IAsyncRepository<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>>? predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/AccountCreationRepository.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 85,
+                  "endLine": 7,
+                  "endColumn": 111
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<AccountCreationEntity>> RepositoryBase<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>> predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<AccountCreationEntity>> IAsyncRepository<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>>? predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/AccountCreationRepository.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 85,
+                  "endLine": 7,
+                  "endColumn": 111
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includeString' of 'Task<IReadOnlyList<AccountCreationEntity>> RepositoryBase<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>> predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<AccountCreationEntity>> IAsyncRepository<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>>? predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/AccountCreationRepository.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 85,
+                  "endLine": 7,
+                  "endColumn": 111
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<AccountCreationEntity>> RepositoryBase<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>> predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>> orderBy = null, List<Expression<Func<AccountCreationEntity, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<AccountCreationEntity>> IAsyncRepository<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>>? predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>>? orderBy = null, List<Expression<Func<AccountCreationEntity, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/AccountCreationRepository.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 85,
+                  "endLine": 7,
+                  "endColumn": 111
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<AccountCreationEntity>> RepositoryBase<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>> predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>> orderBy = null, List<Expression<Func<AccountCreationEntity, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<AccountCreationEntity>> IAsyncRepository<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>>? predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>>? orderBy = null, List<Expression<Func<AccountCreationEntity, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/AccountCreationRepository.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 85,
+                  "endLine": 7,
+                  "endColumn": 111
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includes' of 'Task<IReadOnlyList<AccountCreationEntity>> RepositoryBase<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>> predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>> orderBy = null, List<Expression<Func<AccountCreationEntity, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<AccountCreationEntity>> IAsyncRepository<AccountCreationEntity>.GetAsync(Expression<Func<AccountCreationEntity, bool>>? predicate = null, Func<IQueryable<AccountCreationEntity>, IOrderedQueryable<AccountCreationEntity>>? orderBy = null, List<Expression<Func<AccountCreationEntity, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/AccountCreationRepository.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 85,
+                  "endLine": 7,
+                  "endColumn": 111
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 92,
+                  "endLine": 31,
+                  "endColumn": 96
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 150,
+                  "endLine": 31,
+                  "endColumn": 154
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 179,
+                  "endLine": 31,
+                  "endColumn": 183
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 92,
+                  "endLine": 45,
+                  "endColumn": 96
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 150,
+                  "endLine": 45,
+                  "endColumn": 154
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 201,
+                  "endLine": 45,
+                  "endColumn": 205
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'AccountCreation' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Persistance/SignatureContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 16,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Persistance/SignatureContext.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 45,
+                  "endLine": 14,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Clients' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Persistance/SignatureContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 16,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Persistance/SignatureContext.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 30,
+                  "endLine": 15,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'ClientDocuments' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Persistance/SignatureContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 16,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Persistance/SignatureContext.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 38,
+                  "endLine": 16,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'CINImage1' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'CINImageData1' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'CINImage2' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'CINImageData2' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Selfie' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'SelfieData' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/ClientDocument.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Country' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 23,
+                  "endLine": 25,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 23,
+                  "endLine": 25,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Governance' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endLine": 26,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endLine": 26,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'City' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 23,
+                  "endLine": 27,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 23,
+                  "endLine": 27,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'PostalCode' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 23,
+                  "endLine": 28,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 23,
+                  "endLine": 28,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Number' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 23,
+                  "endLine": 29,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 23,
+                  "endLine": 29,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Street' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 23,
+                  "endLine": 30,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 23,
+                  "endLine": 30,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Civility' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'FirstName' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'LastName' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'PhoneNumber' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Email' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Address' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 24,
+                  "endLine": 20,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/Client.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 24,
+                  "endLine": 20,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Nationality' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'OtherNationality' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'CivilState' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'ProfessionalStatus' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'ActivityNature' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'FieldOfProfession' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'PoliticalFunction' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Models/AccountCreation.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Client' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/ClientDetails.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/ClientDetails.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'AccountCreation' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/ClientDetails.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 38,
+                  "endLine": 8,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/ClientDetails.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 38,
+                  "endLine": 8,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'ClientDocument' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/ClientDetails.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 37,
+                  "endLine": 9,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/ClientDetails.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 37,
+                  "endLine": 9,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endLine": 16,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/AccountCreationRepository.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 20,
+                  "endLine": 20,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/ClientRepository.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 20,
+                  "endLine": 20,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 20,
+                  "endLine": 61,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8631",
+          "level": "warning",
+          "message": "The type 'TContext?' cannot be used as type parameter 'TContext' in the generic type or method 'HostExtensions.InvokeSeeder<TContext>(Action<TContext, IServiceProvider>, TContext, IServiceProvider)'. Nullability of type argument 'TContext?' doesn't match constraint type 'Microsoft.EntityFrameworkCore.DbContext'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Extensions/HostExtension.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 41,
+                  "endLine": 33,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8620",
+          "level": "warning",
+          "message": "Argument of type 'Action<TContext, IServiceProvider>' cannot be used for parameter 'seeder' of type 'Action<TContext?, IServiceProvider>' in 'void HostExtensions.InvokeSeeder<TContext?>(Action<TContext?, IServiceProvider> seeder, TContext? context, IServiceProvider services)' due to differences in the nullability of reference types.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Extensions/HostExtension.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 54,
+                  "endLine": 33,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/appsettings.json",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 26,
+                  "endLine": 4,
+                  "endColumn": 133
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'ConfigureEntities' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Persistance/SignatureContext.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 22,
+                  "endLine": 37,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3445",
+          "level": "warning",
+          "message": "Consider using 'throw;' to preserve the stack trace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 13,
+                  "endLine": 86,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2200",
+          "level": "warning",
+          "message": "Re-throwing caught exception changes stack information",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 13,
+                  "endLine": 86,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1835",
+          "level": "note",
+          "message": "Change the 'WriteAsync' method call to use the 'Stream.WriteAsync(ReadOnlyMemory<byte>, CancellationToken)' overload",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/GetClientInfo/GetClientInfoQueryEndpoint.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 23,
+                  "endLine": 30,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ASP0018",
+          "level": "note",
+          "message": "Unused route parameter 'clientId'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/GetClientInfo/GetClientInfoQueryEndpoint.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 34,
+                  "endLine": 10,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "RouteParameterInsertIndex": "-1",
+              "RouteParameterIsOptional": "False",
+              "RouteParameterName": "clientId",
+              "RouteParameterPolicy": ""
+            }
+          }
+        },
+        {
+          "ruleId": "ASP0019",
+          "level": "warning",
+          "message": "Use IHeaderDictionary.Append or the indexer to append or set headers. IDictionary.Add will throw an ArgumentException when attempting to add a duplicate key.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Signatures/GetClientInfo/GetClientInfoQueryEndpoint.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 17,
+                  "endLine": 28,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'ConfigureEntities' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Persistance/SignatureContext.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 22,
+                  "endLine": 37,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Extensions/HostExtension.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 53,
+                  "endLine": 27,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogError(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Infrastructure/Extensions/HostExtension.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 53,
+                  "endLine": 27,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ASP0014",
+          "level": "warning",
+          "message": "Suggest using top level route registrations instead of UseEndpoints",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Program.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 5,
+                  "endLine": 71,
+                  "endColumn": 3
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Program.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 1,
+                  "endLine": 73,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'assembly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Signature/Signature.API/Program.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 5,
+                  "endLine": 16,
+                  "endColumn": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "ASP0014": {
+          "id": "ASP0014",
+          "shortDescription": "Suggest using top level route registrations",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/aspnet/analyzers",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        },
+        "ASP0018": {
+          "id": "ASP0018",
+          "shortDescription": "Unused route parameter",
+          "defaultLevel": "note",
+          "helpUri": "https://aka.ms/aspnet/analyzers",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        },
+        "ASP0019": {
+          "id": "ASP0019",
+          "shortDescription": "Suggest using IHeaderDictionary.Append or the indexer",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/aspnet/analyzers",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        },
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1835": {
+          "id": "CA1835",
+          "shortDescription": "Prefer the 'Memory'-based overloads for 'ReadAsync' and 'WriteAsync'",
+          "fullDescription": "'Stream' has a 'ReadAsync' overload that takes a 'Memory<Byte>' as the first argument, and a 'WriteAsync' overload that takes a 'ReadOnlyMemory<Byte>' as the first argument. Prefer calling the memory based overloads, which are more efficient.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1835",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2200": {
+          "id": "CA2200",
+          "shortDescription": "Rethrow to preserve stack details",
+          "defaultLevel": "warning",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2200",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2254": {
+          "id": "CA2254",
+          "shortDescription": "Template should be a static expression",
+          "fullDescription": "The logging message template should not vary between calls.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2254",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS8603": {
+          "id": "CS8603",
+          "shortDescription": "Possible null reference return.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8603)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8620": {
+          "id": "CS8620",
+          "shortDescription": "Argument cannot be used for parameter due to differences in the nullability of reference types.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8620)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8625": {
+          "id": "CS8625",
+          "shortDescription": "Cannot convert null literal to non-nullable reference type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8625)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8631": {
+          "id": "CS8631",
+          "shortDescription": "The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match constraint type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8631)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8767": {
+          "id": "CS8767",
+          "shortDescription": "Nullability of reference types in type of parameter doesn't match implicitly implemented member (possibly because of nullability attributes).",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8767)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "An unused local variable is a variable that has been declared but is not used anywhere in the block of code where it is defined. It is dead code, contributing to unnecessary complexity and leading to confusion when reading the code. Therefore, it should be removed from your code to maintain clarity and efficiency.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2325": {
+          "id": "S2325",
+          "shortDescription": "Methods and properties that don't access instance data should be static",
+          "fullDescription": "Methods and properties that don’t access instance data should be marked as static for the following reasons:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2325",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2629": {
+          "id": "S2629",
+          "shortDescription": "Logging templates should be constant",
+          "fullDescription": "Logging arguments should not require evaluation in order to avoid unnecessary performance overhead. When passing concatenated strings or string interpolations directly into a logging method, the evaluation of these expressions occurs every time the logging method is called, regardless of the log level. This can lead to inefficient code execution and increased resource consumption.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2629",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3445": {
+          "id": "S3445",
+          "shortDescription": "Exceptions should not be explicitly rethrown",
+          "fullDescription": "In C#, the throw statement can be used in two different ways:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3445",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

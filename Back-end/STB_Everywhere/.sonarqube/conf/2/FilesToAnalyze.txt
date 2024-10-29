@@ -1,0 +1,4 @@
+﻿C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\CQRS\ICommand.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\CQRS\ICommandHandler.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\CQRS\IQuery.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\CQRS\IQueryHandler.cs

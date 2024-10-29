@@ -1,0 +1,2 @@
+﻿C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\Common.Logging\LoggingDelegatingHandler.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\BuildingBlocks\Common.Logging\SeriLogger.cs

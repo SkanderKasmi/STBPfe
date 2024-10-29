@@ -1,0 +1,163 @@
+version: '3.4'
+
+services:
+  accountcreation.api:
+    container_name: "AccountCreation.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Release
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "AccountCreation.API"
+    volumes:
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/AccountCreation.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "AccountCreation.API"
+    tty: true
+  documentupload.api:
+    container_name: "DocumentUpload.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Release
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "DocumentUpload.API"
+    volumes:
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/DocumentUpload.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "DocumentUpload.API"
+    tty: true
+
+  emailservice.api:
+    container_name: "EmailService.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Release
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "EmailService.API"
+    volumes:
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/EmailService.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "EmailService.API"
+    tty: true
+
+  registration.api:
+    container_name: "Registration.API_1"
+    build:
+      args:
+        BUILD_CONFIGURATION: Release
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Registration.API"
+    volumes:
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/Registration.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "Registration.API"
+    tty: true
+
+  signature.api:
+    container_name: "Signature.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Release
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Signature.API"
+    volumes:
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/Signature.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "Signature.API"
+    tty: true
+
+  smsservice.api:
+    container_name: "SMSService.API"
+    build:
+      args:
+        BUILD_CONFIGURATION: Release
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "SMSService.API"
+    volumes:
+      - C:\Users\jerby\vsdbg\vs2017u5:/remote_debugger:rw
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0:/TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0:/HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/SMSService.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "SMSService.API"
+    tty: true

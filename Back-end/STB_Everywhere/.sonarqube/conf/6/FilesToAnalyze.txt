@@ -1,0 +1,13 @@
+﻿C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Behaviours\UnhandledExceptionBehaviour.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Behaviours\ValidationBehaviour.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Contracts\Infrastructure\IEmailService.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Contracts\Persistence\IAsyncRepository.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Contracts\Persistence\IClientRepository.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Features\Commands\ClientRegistrationCommand.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Features\Commands\ClientRegistrationCommandHandler.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Features\Commands\VerifEmail\VerifyEmailCommand.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Features\Commands\VerifEmail\VerifyEmailCommandHandler.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Features\Commands\VerifPhone\VerifyPhoneNumberCommand.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Features\Commands\VerifPhone\VerifyPhoneNumberCommandHandler.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Models\Email.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Application\Models\EmailSettings.cs

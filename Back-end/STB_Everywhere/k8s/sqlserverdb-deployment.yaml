@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\kompose-windows-amd64.exe convert --file .\docker-compose.yml -f .\docker-compose.override.yml -v
+    kompose.version: 1.34.0 (cbf2835db)
+  labels:
+    io.kompose.service: sqlserverdb
+  name: sqlserverdb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: sqlserverdb
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\kompose-windows-amd64.exe convert --file .\docker-compose.yml -f .\docker-compose.override.yml -v
+        kompose.version: 1.34.0 (cbf2835db)
+      labels:
+        io.kompose.service: sqlserverdb
+    spec:
+      containers:
+        - env:
+            - name: ACCEPT_EULA
+              value: "Y"
+            - name: MSSQL_SA_PASSWORD
+              value: SwN12345678
+          image: mcr.microsoft.com/mssql/server:2017-latest
+          name: sqlserverdb
+          ports:
+            - containerPort: 1433
+              protocol: TCP
+      restartPolicy: Always

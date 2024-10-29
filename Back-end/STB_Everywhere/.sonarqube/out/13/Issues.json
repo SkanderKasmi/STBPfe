@@ -1,0 +1,534 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.9.0.0",
+        "fileVersion": "4.9.2-3.24129.6 (9934fb9e)",
+        "semanticVersion": "4.9.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "CS0234",
+          "level": "error",
+          "message": "The type or namespace name 'CreateClientDocument' does not exist in the namespace 'DocumentUpload.API.ClientDocuments' (are you missing an assembly reference?)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/MapsterConfig.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 42,
+                  "endLine": 2,
+                  "endColumn": 62
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CS0436",
+          "level": "warning",
+          "message": "The type 'RepositoryBase<T>' in 'C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\Infrastructure\\Repositories\\RepositoryBase.cs' conflicts with the imported type 'RepositoryBase<T>' in 'AccountCreation.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. Using the type defined in 'C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\Infrastructure\\Repositories\\RepositoryBase.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 45,
+                  "endLine": 10,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0436",
+          "level": "warning",
+          "message": "The type 'IAsyncRepository<T>' in 'C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\Infrastructure\\Repositories\\IAsyncRepository.cs' conflicts with the imported type 'IAsyncRepository<T>' in 'AccountCreation.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. Using the type defined in 'C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\Infrastructure\\Repositories\\IAsyncRepository.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 38,
+                  "endLine": 10,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0436",
+          "level": "warning",
+          "message": "The type 'IAsyncRepository<T>' in 'C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\Infrastructure\\Repositories\\IAsyncRepository.cs' conflicts with the imported type 'IAsyncRepository<T>' in 'AccountCreation.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. Using the type defined in 'C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\Infrastructure\\Repositories\\IAsyncRepository.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/IDocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 50,
+                  "endLine": 7,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 45,
+                  "endLine": 31,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 45,
+                  "endLine": 31,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includeString' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 45,
+                  "endLine": 31,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, List<Expression<Func<T, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 45,
+                  "endLine": 45,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, List<Expression<Func<T, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 45,
+                  "endLine": 45,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includes' of 'Task<IReadOnlyList<T>> RepositoryBase<T>.GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<T>> IAsyncRepository<T>.GetAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, List<Expression<Func<T, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 45,
+                  "endLine": 45,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 77,
+                  "endLine": 10,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 77,
+                  "endLine": 10,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includeString' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, string includeString = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, string? includeString = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 77,
+                  "endLine": 10,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'predicate' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, List<Expression<Func<ClientDocument, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, List<Expression<Func<ClientDocument, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 77,
+                  "endLine": 10,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'orderBy' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, List<Expression<Func<ClientDocument, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, List<Expression<Func<ClientDocument, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 77,
+                  "endLine": 10,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8767",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'includes' of 'Task<IReadOnlyList<ClientDocument>> RepositoryBase<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>> predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>> orderBy = null, List<Expression<Func<ClientDocument, object>>> includes = null, bool disableTracking = true)' doesn't match implicitly implemented member 'Task<IReadOnlyList<ClientDocument>> IAsyncRepository<ClientDocument>.GetAsync(Expression<Func<ClientDocument, bool>>? predicate = null, Func<IQueryable<ClientDocument>, IOrderedQueryable<ClientDocument>>? orderBy = null, List<Expression<Func<ClientDocument, object>>>? includes = null, bool disableTracking = true)' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/DocumentUploadRepository.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 77,
+                  "endLine": 10,
+                  "endColumn": 102
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 92,
+                  "endLine": 31,
+                  "endColumn": 96
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 150,
+                  "endLine": 31,
+                  "endColumn": 154
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 179,
+                  "endLine": 31,
+                  "endColumn": 183
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 92,
+                  "endLine": 45,
+                  "endColumn": 96
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 150,
+                  "endLine": 45,
+                  "endColumn": 154
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/DocumentUpload/DocumentUpload.API/Infrastructure/Repositories/RepositoryBase.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 201,
+                  "endLine": 45,
+                  "endColumn": 205
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS0234": {
+          "id": "CS0234",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0234)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
+            ]
+          }
+        },
+        "CS0436": {
+          "id": "CS0436",
+          "shortDescription": "Type conflicts with imported type",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0436)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8625": {
+          "id": "CS8625",
+          "shortDescription": "Cannot convert null literal to non-nullable reference type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8625)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8767": {
+          "id": "CS8767",
+          "shortDescription": "Nullability of reference types in type of parameter doesn't match implicitly implemented member (possibly because of nullability attributes).",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8767)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

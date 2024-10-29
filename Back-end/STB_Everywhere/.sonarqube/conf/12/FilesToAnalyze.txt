@@ -1,0 +1,10 @@
+﻿C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Migrations\20240214140626_InitialCreate.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Migrations\20240214140626_InitialCreate.Designer.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Migrations\20240222083251_FirstMigration.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Migrations\20240222083251_FirstMigration.Designer.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Migrations\20240222090551_UpdatedFirstMigration.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Migrations\20240222090551_UpdatedFirstMigration.Designer.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Migrations\RegistrationContextModelSnapshot.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Persistance\RegistrationContext.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Repositories\ClientRepository.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Infrastructure\Repositories\RepositoryBase.cs

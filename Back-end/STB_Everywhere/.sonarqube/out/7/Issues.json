@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.9.0.0",
+        "fileVersion": "4.9.2-3.24129.6 (9934fb9e)",
+        "semanticVersion": "4.9.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "CA1860",
+          "level": "note",
+          "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/BuildingBlocks/ValidationBehavior/ValidationBehavior.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 29,
+                  "endLine": 26,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "DiagnosticPropertyKey": "Count"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1860",
+          "level": "note",
+          "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/BuildingBlocks/ValidationBehavior/ValidationBehavior.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 17,
+                  "endLine": 30,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "DiagnosticPropertyKey": "Count"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA1860": {
+          "id": "CA1860",
+          "shortDescription": "Avoid using 'Enumerable.Any()' extension method",
+          "fullDescription": "Prefer using 'IsEmpty', 'Count' or 'Length' properties whichever available, rather than calling 'Enumerable.Any()'. The intent is clearer and it is more performant than using 'Enumerable.Any()' extension method.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1860",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

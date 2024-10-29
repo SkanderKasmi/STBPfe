@@ -1,0 +1,343 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.9.0.0",
+        "fileVersion": "4.9.2-3.24129.6 (9934fb9e)",
+        "semanticVersion": "4.9.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 9,
+                  "endLine": 95,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 17,
+                  "endLine": 20,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 30,
+                  "endLine": 63,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "Please review this hard-coded password.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 35,
+                  "endLine": 80,
+                  "endColumn": 104
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6667",
+          "level": "warning",
+          "message": "Logging in a catch clause should pass the caught exception as a parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 17,
+                  "endLine": 90,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1450",
+          "level": "warning",
+          "message": "Remove the field '_connection' and declare it as a local variable in the relevant methods.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 38,
+                  "endLine": 12,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/Program.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 1,
+                  "endLine": 48,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 33,
+                  "endLine": 85,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 27,
+                  "endLine": 90,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'SendVerificationEmail' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Email/EmailService.API/EmailVeerificationService.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 22,
+                  "endLine": 57,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Commented-out code distracts the focus from the actual executed code. It creates a noise that increases maintenance code. And because it is never executed, it quickly becomes out of date and invalid.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1450": {
+          "id": "S1450",
+          "shortDescription": "Private fields only used as local variables in methods should become local variables",
+          "fullDescription": "When the value of a private field is always assigned to in a class' methods before being read, then it is not being used to store class information. Therefore, it should become a local variable in the relevant methods to prevent any misunderstanding.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1450",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2629": {
+          "id": "S2629",
+          "shortDescription": "Logging templates should be constant",
+          "fullDescription": "Logging arguments should not require evaluation in order to avoid unnecessary performance overhead. When passing concatenated strings or string interpolations directly into a logging method, the evaluation of these expressions occurs every time the logging method is called, regardless of the log level. This can lead to inefficient code execution and increased resource consumption.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2629",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6667": {
+          "id": "S6667",
+          "shortDescription": "Logging in a catch clause should pass the caught exception as a parameter.",
+          "fullDescription": "This rule raises an issue on logging calls inside a catch clause that does not pass the raised Exception.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6667",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

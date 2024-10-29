@@ -1,0 +1,9 @@
+﻿C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Test\GlobalUsings.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Test\RegistrationService.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Test\RegistrationServiceTests.cs
+C:\Users\admin\.nuget\packages\microsoft.net.test.sdk\17.6.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\admin\.nuget\packages\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.exe
+C:\Users\admin\.nuget\packages\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.dll
+C:\Users\admin\.nuget\packages\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\admin\.nuget\packages\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\admin\.nuget\packages\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll

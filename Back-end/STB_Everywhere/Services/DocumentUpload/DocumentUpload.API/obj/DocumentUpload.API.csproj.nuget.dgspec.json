@@ -1,0 +1,584 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj",
+        "projectName": "CQRS",
+        "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj",
+        "projectName": "AccountCreation.API",
+        "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj": {
+                "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj"
+              },
+              "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj": {
+                "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Carter": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Cqrs": {
+              "target": "Package",
+              "version": "[5.1.0.44, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "Marten": {
+              "target": "Package",
+              "version": "[7.19.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj",
+        "projectName": "DocumentUpload.API",
+        "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj": {
+                "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj"
+              },
+              "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj": {
+                "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj"
+              },
+              "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj": {
+                "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj"
+              },
+              "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Carter": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Cqrs": {
+              "target": "Package",
+              "version": "[5.1.0.44, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "Marten": {
+              "target": "Package",
+              "version": "[7.19.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.20.1, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj",
+        "projectName": "Registration.Application",
+        "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj": {
+                "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj",
+        "projectName": "Registration.Domain",
+        "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj",
+        "projectName": "Registration.Infrastructure",
+        "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj": {
+                "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

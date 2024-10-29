@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "5lgmNWLtuBVCZpfn2ECpeE92/NKoTJGoAuY8hJXCYsI=",
+  "Source": "DocumentUpload.API",
+  "BasePath": "_content/DocumentUpload.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj",
+      "Version": 2,
+      "Source": "AccountCreation.API",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+﻿C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\PhoneNumberVerificationService.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\Program.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\obj\Debug\net8.0\SMSService.API.GlobalUsings.g.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\obj\Debug\net8.0\SMSService.API.AssemblyInfo.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\obj\Debug\net8.0\SMSService.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\appsettings.Development.json
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\appsettings.json
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\Dockerfile
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\SMSService.API.http
+C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\SMS\SMSService.API\Properties\launchSettings.json

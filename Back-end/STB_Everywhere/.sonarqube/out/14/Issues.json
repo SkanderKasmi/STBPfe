@@ -1,0 +1,371 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.9.0.0",
+        "fileVersion": "4.9.2-3.24129.6 (9934fb9e)",
+        "semanticVersion": "4.9.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "CS8631",
+          "level": "warning",
+          "message": "The type 'TContext?' cannot be used as type parameter 'TContext' in the generic type or method 'HostExtensions.InvokeSeeder<TContext>(Action<TContext, IServiceProvider>, TContext, IServiceProvider)'. Nullability of type argument 'TContext?' doesn't match constraint type 'Microsoft.EntityFrameworkCore.DbContext'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Extensions/HostExtensions.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 41,
+                  "endLine": 33,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8620",
+          "level": "warning",
+          "message": "Argument of type 'Action<TContext, IServiceProvider>' cannot be used for parameter 'seeder' of type 'Action<TContext?, IServiceProvider>' in 'void HostExtensions.InvokeSeeder<TContext?>(Action<TContext?, IServiceProvider> seeder, TContext? context, IServiceProvider services)' due to differences in the nullability of reference types.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Extensions/HostExtensions.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 54,
+                  "endLine": 33,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/appsettings.json",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 26,
+                  "endLine": 3,
+                  "endColumn": 133
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Program.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 16,
+                  "endLine": 17,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'Program' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Program.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 16,
+                  "endLine": 17,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Program.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 9,
+                  "endLine": 73,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Program.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 9,
+                  "endLine": 76,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Extensions/HostExtensions.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 53,
+                  "endLine": 27,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogError(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Extensions/HostExtensions.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 53,
+                  "endLine": 27,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S5122",
+          "level": "warning",
+          "message": "Make sure this permissive CORS policy is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.API/Program.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 47,
+                  "endLine": 57,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA2254": {
+          "id": "CA2254",
+          "shortDescription": "Template should be a static expression",
+          "fullDescription": "The logging message template should not vary between calls.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2254",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS8620": {
+          "id": "CS8620",
+          "shortDescription": "Argument cannot be used for parameter due to differences in the nullability of reference types.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8620)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8631": {
+          "id": "CS8631",
+          "shortDescription": "The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match constraint type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8631)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Whenever there are portions of code that are duplicated and do not depend on the state of their container class, they can be centralized inside a \"utility class\". A utility class is a class that only has static members, hence it should not be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Commented-out code distracts the focus from the actual executed code. It creates a noise that increases maintenance code. And because it is never executed, it quickly becomes out of date and invalid.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2629": {
+          "id": "S2629",
+          "shortDescription": "Logging templates should be constant",
+          "fullDescription": "Logging arguments should not require evaluation in order to avoid unnecessary performance overhead. When passing concatenated strings or string interpolations directly into a logging method, the evaluation of these expressions occurs every time the logging method is called, regardless of the log level. This can lead to inefficient code execution and increased resource consumption.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2629",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3903": {
+          "id": "S3903",
+          "shortDescription": "Types should be defined in named namespaces",
+          "fullDescription": "Types are declared in namespaces in order to prevent name collisions and as a way to organize them into the object hierarchy. Types that are defined outside any named namespace are in a global namespace that cannot be referenced in code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3903",
+          "properties": {
+            "category": "Major Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S5122": {
+          "id": "S5122",
+          "shortDescription": "Having a permissive Cross-Origin Resource Sharing policy is security-sensitive",
+          "fullDescription": "Having a permissive Cross-Origin Resource Sharing policy is security-sensitive. It has led in the past to the following vulnerabilities:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-5122",
+          "properties": {
+            "category": "Minor Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

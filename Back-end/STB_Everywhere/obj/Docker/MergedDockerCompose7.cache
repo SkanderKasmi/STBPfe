@@ -1,0 +1,240 @@
+name: dockercompose13832590338016645422
+services:
+  accountcreation.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/AccountCreation/AccountCreation.API/Dockerfile
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+    image: accountcreationapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8007"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  documentupload.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/DocumentUpload/DocumentUpload.API/Dockerfile
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+    image: documentuploadapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8010"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      xpack.watcher.enabled: "false"
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.2
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 9200
+        published: "9200"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: volume
+        source: elasticsearch-data
+        target: /usr/share/elasticsearch/data
+        volume: {}
+  emailservice.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/Email/EmailService.API/Dockerfile
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+    image: emailserviceapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8005"
+        protocol: tcp
+    restart: always
+  kibana:
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_started
+        required: true
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    image: docker.elastic.co/kibana/kibana:8.12.2
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5601
+        published: "5601"
+        protocol: tcp
+    restart: always
+  rabbitmq:
+    container_name: RabbitMQ
+    image: rabbitmq:3-management-alpine
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
+      - mode: ingress
+        target: 15672
+        published: "15672"
+        protocol: tcp
+    restart: always
+  registration.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/Registration/Registration.API/Dockerfile
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+    image: registrationapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8004"
+        protocol: tcp
+    restart: always
+  signature.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/Signature/Signature.API/Dockerfile
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+    image: signatureapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8008"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\jerby\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  smsservice.api:
+    build:
+      context: C:\STBEverywhere\Back-end\STB_Everywhere
+      dockerfile: Services/SMS/SMSService.API/Dockerfile
+    depends_on:
+      sqlserverdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:ConnectionString: Server=SqlServerDB;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
+      ElasticConfiguration:Uri: http://elasticsearch:9200
+    image: smsserviceapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8006"
+        protocol: tcp
+    restart: always
+  sqlserverdb:
+    container_name: SqlServerDB
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: SwN12345678
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1434"
+        protocol: tcp
+    restart: always
+networks:
+  default:
+    name: dockercompose13832590338016645422_default
+volumes:
+  elasticsearch-data:
+    name: dockercompose13832590338016645422_elasticsearch-data

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CPInxnHpTIBBKn6OKZ9bZ3ht5md3GwHGBDbYZs15c6A=",
+  "Source": "AccountCreation.API",
+  "BasePath": "_content/AccountCreation.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

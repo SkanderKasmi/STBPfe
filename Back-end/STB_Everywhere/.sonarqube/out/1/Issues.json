@@ -1,0 +1,441 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.9.0.0",
+        "fileVersion": "4.9.2-3.24129.6 (9934fb9e)",
+        "semanticVersion": "4.9.0",
+        "language": "en-GB"
+      },
+      "results": [
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Country' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 23,
+                  "endLine": 25,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 23,
+                  "endLine": 25,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Governance' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endLine": 26,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endLine": 26,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'City' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 23,
+                  "endLine": 27,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 23,
+                  "endLine": 27,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'PostalCode' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 23,
+                  "endLine": 28,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 23,
+                  "endLine": 28,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Number' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 23,
+                  "endLine": 29,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 23,
+                  "endLine": 29,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Street' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 23,
+                  "endLine": 30,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 23,
+                  "endLine": 30,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Civility' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'FirstName' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'LastName' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'PhoneNumber' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Email' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 23,
+                  "endLine": 16,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Address' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 24,
+                  "endLine": 20,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/admin/OneDrive/Desktop/STBEverywhere/Back-end/STB_Everywhere/Services/Registration/Registration.Domain/Entities/Client.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 24,
+                  "endLine": 20,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
