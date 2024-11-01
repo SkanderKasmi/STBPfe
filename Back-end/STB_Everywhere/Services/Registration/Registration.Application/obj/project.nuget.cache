@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i5JuejZM0NCCwMcXIbKVC9LJAyy+KhZhaLTLBt95sPXgxeKjSG8/KvmQiRv/IXBZBGHdyBu9uJ4EEPWNHL31ZA==",
+  "dgSpecHash": "xjph5FaCXvCznfuYGlfAKWYjJV8j8YSK/3M4TavLDQaZWcA2bXP0h1EKKvOw6lNZAO/vQq3xY9CtgX79CMWQIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj",
+  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

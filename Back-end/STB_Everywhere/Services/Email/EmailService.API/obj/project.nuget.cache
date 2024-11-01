@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ATA0Dwq2lczvWqjQZiorYNumPwF6E8pIDdjL09CZuN//ys95DlX5F7leRcSuhzIppC2KAA1TeeiodP8BHm83uw==",
+  "dgSpecHash": "5qCBahHx+21ce+uEwRNOIE+96nXrRQ1eSXguXR9+/mrudtWb+RQ8Xh5ZnKXXYnCbLZuzfhjL6OmmjgSV98k5MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Email\\EmailService.API\\EmailService.API.csproj",
+  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Email\\EmailService.API\\EmailService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\8.0.1\\aspnetcore.healthchecks.ui.client.8.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\aspnetcore.healthchecks.ui.core\\8.0.1\\aspnetcore.healthchecks.ui.core.8.0.1.nupkg.sha512",

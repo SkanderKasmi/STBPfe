@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "daYPjrlYUJVkCyERo3yA6zTUiG9H/rcu84ePVi4RgvhKzsRewIDbiDcaiE3ktyOpo7GQZCd9ZnwlDI+6I8BKbA==",
+  "dgSpecHash": "buiqjKws9MMBH6ox40wtfDt19PBdf/WDdD+rCDjQETBSIJ3JD/P6J/PFn3B7QN5dOrOLwdf2cdwP77/Y5mHpKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj",
+  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

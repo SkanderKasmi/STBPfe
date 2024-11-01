@@ -6615,11 +6615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj",
       "projectName": "DocumentUpload.API",
-      "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj",
+      "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\DocumentUpload.API.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\obj\\",
+      "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\DocumentUpload\\DocumentUpload.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6634,17 +6634,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj": {
-              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj"
+            "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj": {
+              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj"
             },
-            "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj": {
-              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj"
+            "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj": {
+              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj"
             },
-            "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj": {
-              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj"
+            "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj": {
+              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj"
             },
-            "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj"
+            "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Infrastructure\\Registration.Infrastructure.csproj"
             }
           }
         }

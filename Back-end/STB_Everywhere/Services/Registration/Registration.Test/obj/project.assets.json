@@ -6367,11 +6367,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Test\\Registration.Test.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Test\\Registration.Test.csproj",
       "projectName": "Registration.Test",
-      "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Test\\Registration.Test.csproj",
+      "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Test\\Registration.Test.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Test\\obj\\",
+      "outputPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6386,11 +6386,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj": {
-              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj"
+            "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj": {
+              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Application\\Registration.Application.csproj"
             },
-            "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj": {
-              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj"
+            "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj": {
+              "projectPath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.Domain\\Registration.Domain.csproj"
             }
           }
         }

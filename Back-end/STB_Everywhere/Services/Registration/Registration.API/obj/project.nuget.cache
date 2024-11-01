@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qPevwYLNSg2R9J17ENAer5qF6bSW7KdEx8lr9Y2Hhv2VadFPa1SzrmkdnRg9xVYZAOCHzdA91vTmx5SI9FjjEg==",
+  "dgSpecHash": "DTmGEk/AUilTTrgZ6eT5Ecq8CdN7Ju9Ttyo8/DWSKU8xzyUn0nAkJhcngM0w51JDGDOMW9ldJtFZPhkjeEMr5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.API\\Registration.API.csproj",
+  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Registration\\Registration.API\\Registration.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\8.0.1\\aspnetcore.healthchecks.ui.client.8.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\aspnetcore.healthchecks.ui.core\\8.0.1\\aspnetcore.healthchecks.ui.core.8.0.1.nupkg.sha512",

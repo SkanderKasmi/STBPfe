@@ -12,32 +12,6 @@ services:
     restart: always
     ports:
       - "8004:8080"
-
-  accountcreation.api:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - "ConnectionStrings:ConnectionString=Server=sqlserverdb;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;"
-      - "ElasticConfiguration:Uri=http://elasticsearch:9200"
-    depends_on:
-        - sqlserverdb
-    restart: always
-    ports:
-      - "8007:8080"
-     
-  
-
-  documentupload.api:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - "ConnectionStrings:ConnectionString=Server=sqlserverdb;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;"
-      - "ElasticConfiguration:Uri=http://elasticsearch:9200"
-    depends_on:
-        - sqlserverdb
-    restart: always
-    ports:
-      - "8010:8080"
-      
-    
   emailservice.api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development

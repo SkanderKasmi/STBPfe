@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/69UaUkTJK6sIvJXcLBl4Au6gmaOzNSB0JgpsbKJugX/hs8Fy0yWLqe2tIaPXNkY9QNiRs9PXGfuLeFYyyUjrg==",
+  "dgSpecHash": "LVBfLyU6Yd67bVSDGIFuDFquyQUDQxyQSfugv/lDH7OuYSIkdhlactTc6Y3BZrQLOApfyzDSaLs7vvpeqjNaqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj",
+  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\BuildingBlocks\\CQRS\\CQRS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

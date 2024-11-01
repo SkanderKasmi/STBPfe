@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HuiHEKEtsnRiAZMOdhx3NZK4FPJdv8qoZEnYGRiv89WLcPr9NCTJOJF7q01e5UFABQhDKt4toemm8E0BAaTIRg==",
+  "dgSpecHash": "Ha/9kX6/tnqx4hrvFBSj6RRfb/V7Wbj4L4zbTSepIRaZkrjmtYL4JdCLszOpYhstgVAavoaNZcsqBs2HbxLKnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj",
+  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\AccountCreation\\AccountCreation.API\\AccountCreation.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

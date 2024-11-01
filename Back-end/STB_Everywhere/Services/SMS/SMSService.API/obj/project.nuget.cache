@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QavqxSxOQyU8IgbnAiUbNQYXWfWFPNyJ//wMY6KiaXaUH7Fb8Vpf6HS6tfYzhSCppgDZkWNSTL6tV09O5YZS2A==",
+  "dgSpecHash": "+OBd1qatGdBt6StoS4ZZOEQ1ICdy5Ar3NmMqgeUP+n/I1XyzSyqRcDdKCLnOEZoqy0H+PBM5dKBJKzhHd+gGWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\SMS\\SMSService.API\\SMSService.API.csproj",
+  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\SMS\\SMSService.API\\SMSService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\8.0.1\\aspnetcore.healthchecks.ui.client.8.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\aspnetcore.healthchecks.ui.core\\8.0.1\\aspnetcore.healthchecks.ui.core.8.0.1.nupkg.sha512",

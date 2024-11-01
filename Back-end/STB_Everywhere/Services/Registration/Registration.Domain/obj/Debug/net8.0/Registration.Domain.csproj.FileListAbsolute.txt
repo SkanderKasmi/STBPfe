@@ -34,3 +34,15 @@ C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\R
 C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\refint\Registration.Domain.dll
 C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\Registration.Domain.pdb
 C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\ref\Registration.Domain.dll
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\bin\Debug\net8.0\Registration.Domain.deps.json
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\bin\Debug\net8.0\Registration.Domain.dll
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\bin\Debug\net8.0\Registration.Domain.pdb
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\Registration.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\Registration.Domain.AssemblyInfoInputs.cache
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\Registration.Domain.AssemblyInfo.cs
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\Registration.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\Registration.Domain.sourcelink.json
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\Registration.Domain.dll
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\refint\Registration.Domain.dll
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\Registration.Domain.pdb
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\Services\Registration\Registration.Domain\obj\Debug\net8.0\ref\Registration.Domain.dll

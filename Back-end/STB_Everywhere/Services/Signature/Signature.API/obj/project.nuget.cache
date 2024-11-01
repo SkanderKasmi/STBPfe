@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "acA5YZ9kKPlvgEqmt50FTYqN+pCh+KzITg1GCK8eMnqhvoRwOpS/NPiMRe4vEHGbeBLld0jU/FS7f3Zq/hhBqA==",
+  "dgSpecHash": "ke8XcuPq+K2Nah+LZQON8rVO9Ng5qU6HCK4l61fKFDM28EVj2MT/HAX7EY+StU2u1BoozPLgRjgXjsDt8GmWWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBEverywhere\\Back-end\\STB_Everywhere\\Services\\Signature\\Signature.API\\Signature.API.csproj",
+  "projectFilePath": "C:\\Users\\admin\\OneDrive\\Desktop\\STBPfe\\Back-end\\STB_Everywhere\\Services\\Signature\\Signature.API\\Signature.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

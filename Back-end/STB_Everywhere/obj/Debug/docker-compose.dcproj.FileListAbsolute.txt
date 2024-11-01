@@ -209,3 +209,4 @@ C:\STBEverywhere\Back-end\STB_Everywhere\bin\Debug\appsettings.AccountCreation.j
 C:\STBEverywhere\Back-end\STB_Everywhere\bin\Debug\appsettings.DocumentUpload.Development.json
 C:\STBEverywhere\Back-end\STB_Everywhere\bin\Debug\appsettings.DocumentUpload.json
 C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Desktop\STBPfe\Back-end\STB_Everywhere\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
