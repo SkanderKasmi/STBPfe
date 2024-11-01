@@ -6,7 +6,7 @@ metadata:
     kompose.cmd: C:\Users\admin\OneDrive\Desktop\STBEverywhere\Back-end\STB_Everywhere\kompose-windows-amd64.exe convert --file .\docker-compose.yml -f .\docker-compose.override.yml -v
     kompose.version: 1.34.0 (cbf2835db)
   labels:
-    io.kompose.service: registration-api
+    io.kompose.service: registrationapi
   name: registration.api
 spec:
   ports:
@@ -14,4 +14,4 @@ spec:
       port: 8004
       targetPort: 8080
   selector:
-    io.kompose.service: registration-api
+    io.kompose.service: registrationapi
