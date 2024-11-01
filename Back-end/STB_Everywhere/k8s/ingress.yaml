@@ -23,7 +23,7 @@ spec:
           service:
             name: registrationapi
             port:
-              number: 808
+              number: 8080
       - path: /sms
         pathType: Prefix
         backend:
