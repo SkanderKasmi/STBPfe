@@ -25,10 +25,10 @@ spec:
         - env:
             - name: ASPNETCORE_ENVIRONMENT
               value: Development
-            - name: ConnectionStrings:ConnectionString
-              value: Server=sqlserverdb;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
-            - name: ElasticConfiguration:Uri
-              value: http://elasticsearch:9200
+            - name: ConnectionStrings_ConnectionString  # Changed from ConnectionStrings:ConnectionString
+              value: "Server=sqlserverdb;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;"
+            - name: ElasticConfiguration_Uri  # Changed from ElasticConfiguration:Uri
+              value: "http://elasticsearch:9200"
           image: pikafoc/emailserviceapi:latest
           name: emailserviceapi
           ports:
