@@ -28,7 +28,7 @@ spec:
               value: Server=sqlserverdb;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
             - name: ElasticConfiguration:Uri
               value: http://elasticsearch:9200
-          image: pikafoc/emailserviceapi
+          image: pikafoc/emailserviceapi:latest
           name: emailservice.api
           ports:
             - containerPort: 8080
