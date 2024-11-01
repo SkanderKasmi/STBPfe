@@ -330,6 +330,7 @@ spec:
     io.kompose.service: rabbitmq
 ---
 # SQL Server Deployment
+# SQL Server Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -396,9 +397,9 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            readOnlyRootFilesystem: false  # Changed
-            runAsUser: 10001
-            runAsGroup: 10001
+            runAsUser: 10001  # This is typically the user mssql uses for running
+            runAsGroup: 0      # Set to 0 to allow group-based access
+            fsGroup: 10001     # Properly handle the filesystem shared among pods
 ---
 apiVersion: v1
 kind: Service
