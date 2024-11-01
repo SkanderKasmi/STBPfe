@@ -30,7 +30,7 @@ spec:
             - name: ElasticConfiguration:Uri
               value: http://elasticsearch:9200
           image: pikafoc/registrationapi:latest
-          name: registration.api
+          name: registrationapi
           ports:
             - containerPort: 8080
               protocol: TCP
