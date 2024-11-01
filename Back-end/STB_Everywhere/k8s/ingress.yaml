@@ -6,8 +6,9 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
+  ingressClassName: nginx
   rules:
-  - host: emailservice.local
+  - host: *
     http:
       paths:
       - path: /email
