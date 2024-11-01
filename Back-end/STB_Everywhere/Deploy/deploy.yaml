@@ -56,7 +56,7 @@ spec:
               value: "false"
             - name: xpack.watcher.enabled
               value: "false"
-          image: pikafoc/elasticsearch:latest
+          image: docker.elastic.co/elasticsearch/elasticsearch:8.12.2
           name: elasticsearch
           imagePullPolicy: Always
           ports:
@@ -320,7 +320,7 @@ spec:
         io.kompose.service: rabbitmq
     spec:
       containers:
-        - image: pikafoc/rabbitmq:latest
+        - image: rabbitmq:3-management-alpine
           name: rabbitmq
           imagePullPolicy: Always
           ports:
