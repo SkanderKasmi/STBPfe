@@ -617,7 +617,7 @@ spec:
               value: "Y"
             - name: MSSQL_SA_PASSWORD
               value: SwN12345678
-          image: pikafoc/sqlserverdb:latest
+          image: mcr.microsoft.com/mssql/server:2017-latest
           name: sqlserverdb
           ports:
             - containerPort: 1433
