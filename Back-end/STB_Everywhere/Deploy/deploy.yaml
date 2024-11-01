@@ -143,7 +143,7 @@ spec:
                 configMapKeyRef:
                   name: app-config
                   key: ElasticConfigurationUri
-          image: pikafoc/emailservice-api:latest
+          image: pikafoc/emailserviceapi:latest
           imagePullPolicy: Always
           name: emailservice-api  # Changed name
           ports:
@@ -425,7 +425,7 @@ spec:
                 configMapKeyRef:
                   name: app-config
                   key: ElasticConfigurationUri
-          image: pikafoc/registration-api:latest
+          image: pikafoc/registrationapi:latest
           imagePullPolicy: Always
           name: registration-api  # Changed name
           ports:
@@ -525,7 +525,7 @@ spec:
                 configMapKeyRef:
                   name: app-config
                   key: ElasticConfigurationUri
-          image: pikafoc/smsservice-api:latest
+          image: pikafoc/smsserviceapi:latest
           imagePullPolicy: Always
           name: smsservice-api  # Changed name
           ports:
