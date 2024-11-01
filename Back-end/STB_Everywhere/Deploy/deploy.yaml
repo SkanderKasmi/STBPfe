@@ -24,7 +24,7 @@ metadata:
   name: app-config
 data:
   ConnectionString: Server=sqlserverdb;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true
-  ElasticConfigurationUri: http://elasticsearch:9200
+  ElasticConfiguration:Uri: http://elasticsearch:9200
 ---
 # Elasticsearch Deployment
 apiVersion: apps/v1
@@ -87,9 +87,10 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            readOnlyRootFilesystem: false  # Changed
+            readOnlyRootFilesystem: true
             runAsUser: 10001
             runAsGroup: 10001
+      restartPolicy: Always
       volumes:
         - name: elasticsearch-data
           persistentVolumeClaim:
@@ -132,19 +133,19 @@ spec:
         - env:
             - name: ASPNETCORE_ENVIRONMENT
               value: Development
-            - name: ConnectionStrings_ConnectionString
+            - name: ConnectionStrings:ConnectionString
               valueFrom:
                 configMapKeyRef:
                   name: app-config
                   key: ConnectionString
-            - name: ElasticConfigurationUri
+            - name: ElasticConfiguration:Uri
               valueFrom:
                 configMapKeyRef:
                   name: app-config
-                  key: ElasticConfigurationUri
-          image: pikafoc/emailserviceapi:latest
+                  key: ElasticConfiguration:Uri
+          image: pikafoc/emailservice-api:latest
           imagePullPolicy: Always
-          name: emailservice-api
+          name: emailservice.api
           ports:
             - containerPort: 8080
               protocol: TCP
@@ -188,6 +189,27 @@ spec:
       targetPort: 8080
   selector:
     io.kompose.service: emailservice-api
+---
+# Email Service API Ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: stbeverywhere
+  name: emailservice-api-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: emailservice.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: emailservice-api
+            port:
+              number: 8005
 ---
 # Kibana Deployment
 apiVersion: apps/v1
@@ -239,7 +261,7 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            readOnlyRootFilesystem: false  # Changed
+            readOnlyRootFilesystem: false
             runAsUser: 10001
             runAsGroup: 10001
 ---
@@ -257,6 +279,27 @@ spec:
       targetPort: 5601
   selector:
     io.kompose.service: kibana
+---
+# Kibana Ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: stbeverywhere
+  name: kibana-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: kibana.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kibana
+            port:
+              number: 5601
 ---
 # RabbitMQ Deployment
 apiVersion: apps/v1
@@ -277,7 +320,7 @@ spec:
         io.kompose.service: rabbitmq
     spec:
       containers:
-        - image: rabbitmq:3-management-alpine
+        - image: pikafoc/rabbitmq:latest
           name: rabbitmq
           imagePullPolicy: Always
           ports:
@@ -329,6 +372,227 @@ spec:
   selector:
     io.kompose.service: rabbitmq
 ---
+# RabbitMQ Ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: stbeverywhere
+  name: rabbitmq-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: rabbitmq.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: rabbitmq
+            port:
+              number: 15672
+---
+# Registration API Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: stbeverywhere
+  labels:
+    io.kompose.service: registration-api
+  name: registration-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      io.kompose.service: registration-api
+  template:
+    metadata:
+      labels:
+        io.kompose.service: registration-api
+    spec:
+      containers:
+        - env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+            - name: ConnectionStrings:ConnectionString
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: ConnectionString
+            - name: ElasticConfiguration:Uri
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: ElasticConfiguration:Uri
+          image: pikafoc/registration-api:latest
+          imagePullPolicy: Always
+          name: registration.api
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          resources:
+            requests:
+              cpu: 500m
+              memory: 1Gi
+              ephemeral-storage: 1Gi
+            limits:
+              cpu: 1000m
+              memory: 2Gi
+              ephemeral-storage: 2Gi
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          livenessProbe: 
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 30
+          securityContext:
+            readOnlyRootFilesystem: true
+            runAsUser: 10001
+            runAsGroup: 10001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: stbeverywhere
+  labels:
+    io.kompose.service: registration-api
+  name: registration-api
+spec:
+  ports:
+    - name: "8004"
+      port: 8004
+      targetPort: 8080
+  selector:
+    io.kompose.service: registration-api
+---
+# Registration API Ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: stbeverywhere
+  name: registration-api-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: registration.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: registration-api
+            port:
+              number: 8004
+---
+# SMS Service API Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: stbeverywhere
+  labels:
+    io.kompose.service: smsservice-api
+  name: smsservice-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      io.kompose.service: smsservice-api
+  template:
+    metadata:
+      labels:
+        io.kompose.service: smsservice-api
+    spec:
+      containers:
+        - env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+            - name: ConnectionStrings:ConnectionString
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: ConnectionString
+            - name: ElasticConfiguration:Uri
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: ElasticConfiguration:Uri
+          image: pikafoc/smsservice-api:latest
+          imagePullPolicy: Always
+          name: smsservice.api
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          resources:
+            requests:
+              cpu: 500m
+              memory: 1Gi
+              ephemeral-storage: 1Gi
+            limits:
+              cpu: 1000m
+              memory: 2Gi
+              ephemeral-storage: 2Gi
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          livenessProbe: 
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 30
+          securityContext:
+            readOnlyRootFilesystem: true
+            runAsUser: 10001
+            runAsGroup: 10001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: stbeverywhere
+  labels:
+    io.kompose.service: smsservice-api
+  name: smsservice-api
+spec:
+  ports:
+    - name: "8006"
+      port: 8006
+      targetPort: 8080
+  selector:
+    io.kompose.service: smsservice-api
+---
+# SMS Service API Ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: stbeverywhere
+  name: smsservice-api-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: smsservice.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: smsservice-api
+            port:
+              number: 8006
+---
 # SQL Server Deployment
 apiVersion: apps/v1
 kind: Deployment
@@ -338,7 +602,7 @@ metadata:
     io.kompose.service: sqlserverdb
   name: sqlserverdb
 spec:
-  replicas: 1  # Use 1 replica to avoid complications until tested
+  replicas: 2  
   selector:
     matchLabels:
       io.kompose.service: sqlserverdb
@@ -352,8 +616,8 @@ spec:
             - name: ACCEPT_EULA
               value: "Y"
             - name: MSSQL_SA_PASSWORD
-              value: "SwN12345678"  # Change as necessary to meet complexity requirements
-          image: mcr.microsoft.com/mssql/server:2022-latest
+              value: SwN12345678
+          image: pikafoc/sqlserverdb:latest
           name: sqlserverdb
           ports:
             - containerPort: 1433
@@ -367,9 +631,6 @@ spec:
               cpu: 1000m
               memory: 2Gi
               ephemeral-storage: 2Gi
-          volumeMounts:
-            - mountPath: /var/opt/mssql  # Default data path for SQL Server
-              name: sqlserver-storage
           readinessProbe:
             exec:
               command:
@@ -399,25 +660,9 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
+            readOnlyRootFilesystem: true
             runAsUser: 10001
-            runAsGroup: 0
-            fsGroup: 10001
-      volumes:
-        - name: sqlserver-storage
-          persistentVolumeClaim:
-            claimName: sqlserver-pvc  # Make sure this matches your PVC name
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  namespace: stbeverywhere
-  name: sqlserver-pvc  # Ensure this matches the deployment's volume mount name
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi  # Adjust as necessary for your needs
+            runAsGroup: 10001
 ---
 apiVersion: v1
 kind: Service
@@ -545,184 +790,4 @@ spec:
             matchLabels:
               io.kompose.service: sqlserverdb
 ---
-# Allow traffic from emailservice-api to elasticsearch
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-emailservice-to-elasticsearch
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: elasticsearch
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: emailservice-api
-
----
-# Allow traffic from registration-api to elasticsearch
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-registration-to-elasticsearch
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: elasticsearch
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: registration-api
-
----
-# Allow traffic from smsservice-api to elasticsearch
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-smsservice-to-elasticsearch
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: elasticsearch
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: smsservice-api
-
----
-# Allow traffic from kibana to elasticsearch
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-kibana-to-elasticsearch
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: elasticsearch
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: kibana
-
----
-# Allow traffic from rabbitmq to other services
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-rabbitmq-ingress
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: rabbitmq
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: emailservice-api
-        - podSelector:
-            matchLabels:
-              io.kompose.service: registration-api
-        - podSelector:
-            matchLabels:
-              io.kompose.service: smsservice-api
-
----
-# Allow traffic from sqlserverdb to all related services
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-sqlserverdb-ingress
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: sqlserverdb
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: emailservice-api
-        - podSelector:
-            matchLabels:
-              io.kompose.service: registration-api
-        - podSelector:
-            matchLabels:
-              io.kompose.service: smsservice-api
-
----
-# Allow traffic from emailservice-api to registration-api
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-emailservice-to-registration
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: registration-api
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: emailservice-api
-
----
-# Allow traffic from registration-api to smsservice-api
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-registration-to-smsservice
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: smsservice-api
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: registration-api
-
----
-# Allow traffic from smsservice-api to registration-api
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  namespace: stbeverywhere
-  name: allow-smsservice-to-registration
-spec:
-  podSelector:
-    matchLabels:
-      io.kompose.service: registration-api
-  policyTypes:
-    - Ingress
-  ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              io.kompose.service: smsservice-api
+# Repeat similar NetworkPolicies for other services if necessary
