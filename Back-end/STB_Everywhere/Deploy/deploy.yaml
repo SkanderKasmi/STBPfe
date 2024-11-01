@@ -330,7 +330,6 @@ spec:
     io.kompose.service: rabbitmq
 ---
 # SQL Server Deployment
-# SQL Server Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -339,7 +338,7 @@ metadata:
     io.kompose.service: sqlserverdb
   name: sqlserverdb
 spec:
-  replicas: 2  
+  replicas: 1  # Use 1 replica to avoid complications until tested
   selector:
     matchLabels:
       io.kompose.service: sqlserverdb
@@ -353,7 +352,7 @@ spec:
             - name: ACCEPT_EULA
               value: "Y"
             - name: MSSQL_SA_PASSWORD
-              value: SwN12345678
+              value: "SwN12345678"  # Change as necessary to meet complexity requirements
           image: mcr.microsoft.com/mssql/server:2022-latest
           name: sqlserverdb
           ports:
@@ -368,6 +367,9 @@ spec:
               cpu: 1000m
               memory: 2Gi
               ephemeral-storage: 2Gi
+          volumeMounts:
+            - mountPath: /var/opt/mssql  # Default data path for SQL Server
+              name: sqlserver-storage
           readinessProbe:
             exec:
               command:
@@ -397,9 +399,25 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            runAsUser: 10001  # This is typically the user mssql uses for running
-            runAsGroup: 0      # Set to 0 to allow group-based access
-            fsGroup: 10001     # Properly handle the filesystem shared among pods
+            runAsUser: 10001
+            runAsGroup: 0
+            fsGroup: 10001
+      volumes:
+        - name: sqlserver-storage
+          persistentVolumeClaim:
+            claimName: sqlserver-pvc  # Make sure this matches your PVC name
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: stbeverywhere
+  name: sqlserver-pvc  # Ensure this matches the deployment's volume mount name
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi  # Adjust as necessary for your needs
 ---
 apiVersion: v1
 kind: Service
