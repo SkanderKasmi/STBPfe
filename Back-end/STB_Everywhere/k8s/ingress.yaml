@@ -17,19 +17,19 @@ spec:
           service:
             name: emailserviceapi
             port:
-              number: 8005
+              number: 8080
       - path: /
         pathType: Prefix
         backend:
           service:
             name: registrationapi
             port:
-              number: 8004
+              number: 8080
       - path: /sms
         pathType: Prefix
         backend:
           service:
             name: smsserviceapi
             port:
-              number: 8006
+              number: 8080
       
