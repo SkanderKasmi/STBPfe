@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1
+lapiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   namespace: stbeverywhere
@@ -10,7 +10,7 @@ spec:
   - host: emailservice.local
     http:
       paths:
-      - path: /
+      - path: /email
         pathType: Prefix
         backend:
           service:
@@ -24,7 +24,7 @@ spec:
             name: registrationapi
             port:
               number: 808
-      - path: /
+      - path: /sms
         pathType: Prefix
         backend:
           service:
