@@ -87,7 +87,7 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            readOnlyRootFilesystem: false
+            readOnlyRootFilesystem: false  # Changed
             runAsUser: 10001
             runAsGroup: 10001
       volumes:
@@ -170,7 +170,7 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            readOnlyRootFilesystem: false
+            readOnlyRootFilesystem: true
             runAsUser: 10001
             runAsGroup: 10001
 ---
@@ -188,27 +188,6 @@ spec:
       targetPort: 8080
   selector:
     io.kompose.service: emailservice-api
----
-# Email Service API Ingress
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  namespace: stbeverywhere
-  name: emailservice-api-ingress
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-spec:
-  rules:
-  - host: emailservice.local
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: emailservice-api
-            port:
-              number: 8005
 ---
 # Kibana Deployment
 apiVersion: apps/v1
@@ -260,7 +239,7 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            readOnlyRootFilesystem: false
+            readOnlyRootFilesystem: false  # Changed
             runAsUser: 10001
             runAsGroup: 10001
 ---
@@ -278,27 +257,6 @@ spec:
       targetPort: 5601
   selector:
     io.kompose.service: kibana
----
-# Kibana Ingress
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  namespace: stbeverywhere
-  name: kibana-ingress
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-spec:
-  rules:
-  - host: kibana.local
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: kibana
-            port:
-              number: 5601
 ---
 # RabbitMQ Deployment
 apiVersion: apps/v1
@@ -349,7 +307,7 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            readOnlyRootFilesystem: false
+            readOnlyRootFilesystem: true
             runAsUser: 10001
             runAsGroup: 10001
 ---
@@ -370,227 +328,6 @@ spec:
       targetPort: 15672
   selector:
     io.kompose.service: rabbitmq
----
-# RabbitMQ Ingress
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  namespace: stbeverywhere
-  name: rabbitmq-ingress
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-spec:
-  rules:
-  - host: rabbitmq.local
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: rabbitmq
-            port:
-              number: 15672
----
-# Registration API Deployment
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  namespace: stbeverywhere
-  labels:
-    io.kompose.service: registration-api
-  name: registration-api
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      io.kompose.service: registration-api
-  template:
-    metadata:
-      labels:
-        io.kompose.service: registration-api
-    spec:
-      containers:
-        - env:
-            - name: ASPNETCORE_ENVIRONMENT
-              value: Development
-            - name: ConnectionStrings_ConnectionString
-              valueFrom:
-                configMapKeyRef:
-                  name: app-config
-                  key: ConnectionString
-            - name: ElasticConfigurationUri
-              valueFrom:
-                configMapKeyRef:
-                  name: app-config
-                  key: ElasticConfigurationUri
-          image: pikafoc/registrationapi:latest
-          imagePullPolicy: Always
-          name: registration-api
-          ports:
-            - containerPort: 8080
-              protocol: TCP
-          resources:
-            requests:
-              cpu: 500m
-              memory: 1Gi
-              ephemeral-storage: 1Gi
-            limits:
-              cpu: 1000m
-              memory: 2Gi
-              ephemeral-storage: 2Gi
-          readinessProbe:
-            httpGet:
-              path: /health
-              port: 8080
-            initialDelaySeconds: 30
-            periodSeconds: 10
-          livenessProbe: 
-            httpGet:
-              path: /health
-              port: 8080
-            initialDelaySeconds: 60
-            periodSeconds: 30
-          securityContext:
-            readOnlyRootFilesystem: true
-            runAsUser: 10001
-            runAsGroup: 10001
----
-apiVersion: v1
-kind: Service
-metadata:
-  namespace: stbeverywhere
-  labels:
-    io.kompose.service: registration-api
-  name: registration-api
-spec:
-  ports:
-    - name: "8004"
-      port: 8004
-      targetPort: 8080
-  selector:
-    io.kompose.service: registration-api
----
-# Registration API Ingress
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  namespace: stbeverywhere
-  name: registration-api-ingress
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-spec:
-  rules:
-  - host: registration.local
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: registration-api
-            port:
-              number: 8004
----
-# SMS Service API Deployment
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  namespace: stbeverywhere
-  labels:
-    io.kompose.service: smsservice-api
-  name: smsservice-api
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      io.kompose.service: smsservice-api
-  template:
-    metadata:
-      labels:
-        io.kompose.service: smsservice-api
-    spec:
-      containers:
-        - env:
-            - name: ASPNETCORE_ENVIRONMENT
-              value: Development
-            - name: ConnectionStrings_ConnectionString
-              valueFrom:
-                configMapKeyRef:
-                  name: app-config
-                  key: ConnectionString
-            - name: ElasticConfigurationUri
-              valueFrom:
-                configMapKeyRef:
-                  name: app-config
-                  key: ElasticConfigurationUri
-          image: pikafoc/smsserviceapi:latest
-          imagePullPolicy: Always
-          name: smsservice-api
-          ports:
-            - containerPort: 8080
-              protocol: TCP
-          resources:
-            requests:
-              cpu: 500m
-              memory: 1Gi
-              ephemeral-storage: 1Gi
-            limits:
-              cpu: 1000m
-              memory: 2Gi
-              ephemeral-storage: 2Gi
-          readinessProbe:
-            httpGet:
-              path: /health
-              port: 8080
-            initialDelaySeconds: 30
-            periodSeconds: 10
-          livenessProbe: 
-            httpGet:
-              path: /health
-              port: 8080
-            initialDelaySeconds: 60
-            periodSeconds: 30
-          securityContext:
-            readOnlyRootFilesystem: true
-            runAsUser: 10001
-            runAsGroup: 10001
----
-apiVersion: v1
-kind: Service
-metadata:
-  namespace: stbeverywhere
-  labels:
-    io.kompose.service: smsservice-api
-  name: smsservice-api
-spec:
-  ports:
-    - name: "8006"
-      port: 8006
-      targetPort: 8080
-  selector:
-    io.kompose.service: smsservice-api
----
-# SMS Service API Ingress
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  namespace: stbeverywhere
-  name: smsservice-api-ingress
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-spec:
-  rules:
-  - host: smsservice.local
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: smsservice-api
-            port:
-              number: 8006
 ---
 # SQL Server Deployment
 apiVersion: apps/v1
@@ -659,7 +396,7 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           securityContext:
-            readOnlyRootFilesystem: false
+            readOnlyRootFilesystem: false  # Changed
             runAsUser: 10001
             runAsGroup: 10001
 ---
