@@ -790,4 +790,81 @@ spec:
             matchLabels:
               io.kompose.service: sqlserverdb
 ---
+# PodDisruptionBudget for each deployment
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  namespace: stbeverywhere
+  name: elasticsearch-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      io.kompose.service: elasticsearch
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  namespace: stbeverywhere
+  name: emailservice-api-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      io.kompose.service: emailservice-api
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  namespace: stbeverywhere
+  name: kibana-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      io.kompose.service: kibana
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  namespace: stbeverywhere
+  name: rabbitmq-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      io.kompose.service: rabbitmq
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  namespace: stbeverywhere
+  name: registration-api-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      io.kompose.service: registration-api
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  namespace: stbeverywhere
+  name: smsservice-api-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      io.kompose.service: smsservice-api
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  namespace: stbeverywhere
+  name: sqlserverdb-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      io.kompose.service: sqlserverdb
 # Repeat similar NetworkPolicies for other services if necessary
