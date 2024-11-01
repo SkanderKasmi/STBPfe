@@ -28,7 +28,7 @@ spec:
               value: Server=sqlserverdb;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true;
             - name: ElasticConfiguration:Uri
               value: http://elasticsearch:9200
-          image: registrationapi
+          image: pikafoc/registrationapi:latest
           name: registration.api
           ports:
             - containerPort: 8080
