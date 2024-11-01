@@ -867,4 +867,186 @@ spec:
   selector:
     matchLabels:
       io.kompose.service: sqlserverdb
+---
+# Allow traffic from emailservice-api to elasticsearch
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-emailservice-to-elasticsearch
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: elasticsearch
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: emailservice-api
+
+---
+# Allow traffic from registration-api to elasticsearch
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-registration-to-elasticsearch
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: elasticsearch
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: registration-api
+
+---
+# Allow traffic from smsservice-api to elasticsearch
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-smsservice-to-elasticsearch
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: elasticsearch
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: smsservice-api
+
+---
+# Allow traffic from kibana to elasticsearch
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-kibana-to-elasticsearch
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: elasticsearch
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: kibana
+
+---
+# Allow traffic from rabbitmq to other services
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-rabbitmq-ingress
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: rabbitmq
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: emailservice-api
+        - podSelector:
+            matchLabels:
+              io.kompose.service: registration-api
+        - podSelector:
+            matchLabels:
+              io.kompose.service: smsservice-api
+
+---
+# Allow traffic from sqlserverdb to all related services
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-sqlserverdb-ingress
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: sqlserverdb
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: emailservice-api
+        - podSelector:
+            matchLabels:
+              io.kompose.service: registration-api
+        - podSelector:
+            matchLabels:
+              io.kompose.service: smsservice-api
+
+---
+# Allow traffic from emailservice-api to registration-api
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-emailservice-to-registration
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: registration-api
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: emailservice-api
+
+---
+# Allow traffic from registration-api to smsservice-api
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-registration-to-smsservice
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: smsservice-api
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: registration-api
+
+---
+# Allow traffic from smsservice-api to registration-api
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  namespace: stbeverywhere
+  name: allow-smsservice-to-registration
+spec:
+  podSelector:
+    matchLabels:
+      io.kompose.service: registration-api
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.service: smsservice-api
 # Repeat similar NetworkPolicies for other services if necessary
