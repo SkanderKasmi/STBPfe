@@ -24,7 +24,7 @@ metadata:
   name: app-config
 data:
   ConnectionString: Server=sqlserverdb;Database=STBEverywhereDB;User Id=sa;Password=SwN12345678;TrustServerCertificate=true
-  ElasticConfiguration:Uri: http://elasticsearch:9200
+  ElasticConfigurationUri: http://elasticsearch:9200  # Changed key
 ---
 # Elasticsearch Deployment
 apiVersion: apps/v1
@@ -133,19 +133,19 @@ spec:
         - env:
             - name: ASPNETCORE_ENVIRONMENT
               value: Development
-            - name: ConnectionStrings:ConnectionString
+            - name: ConnectionStrings_ConnectionString  # Changed to underscore
               valueFrom:
                 configMapKeyRef:
                   name: app-config
                   key: ConnectionString
-            - name: ElasticConfiguration:Uri
+            - name: ElasticConfigurationUri  # Changed to match the ConfigMap
               valueFrom:
                 configMapKeyRef:
                   name: app-config
-                  key: ElasticConfiguration:Uri
+                  key: ElasticConfigurationUri
           image: pikafoc/emailservice-api:latest
           imagePullPolicy: Always
-          name: emailservice.api
+          name: emailservice-api  # Changed name
           ports:
             - containerPort: 8080
               protocol: TCP
@@ -415,19 +415,19 @@ spec:
         - env:
             - name: ASPNETCORE_ENVIRONMENT
               value: Development
-            - name: ConnectionStrings:ConnectionString
+            - name: ConnectionStrings_ConnectionString  # Changed to underscore
               valueFrom:
                 configMapKeyRef:
                   name: app-config
                   key: ConnectionString
-            - name: ElasticConfiguration:Uri
+            - name: ElasticConfigurationUri  # Changed to match the ConfigMap
               valueFrom:
                 configMapKeyRef:
                   name: app-config
-                  key: ElasticConfiguration:Uri
+                  key: ElasticConfigurationUri
           image: pikafoc/registration-api:latest
           imagePullPolicy: Always
-          name: registration.api
+          name: registration-api  # Changed name
           ports:
             - containerPort: 8080
               protocol: TCP
@@ -515,19 +515,19 @@ spec:
         - env:
             - name: ASPNETCORE_ENVIRONMENT
               value: Development
-            - name: ConnectionStrings:ConnectionString
+            - name: ConnectionStrings_ConnectionString  # Changed to underscore
               valueFrom:
                 configMapKeyRef:
                   name: app-config
                   key: ConnectionString
-            - name: ElasticConfiguration:Uri
+            - name: ElasticConfigurationUri  # Changed to match the ConfigMap
               valueFrom:
                 configMapKeyRef:
                   name: app-config
-                  key: ElasticConfiguration:Uri
+                  key: ElasticConfigurationUri
           image: pikafoc/smsservice-api:latest
           imagePullPolicy: Always
-          name: smsservice.api
+          name: smsservice-api  # Changed name
           ports:
             - containerPort: 8080
               protocol: TCP
